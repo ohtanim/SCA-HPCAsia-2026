@@ -1,0 +1,15 @@
+Starting at Wed Jan 21 10:01:20 UTC 2026
+Running on hosts: c[2-3]
+Running on 2 nodes.
+Running 4 tasks.
+Current working directory is /shared/qiskit-c-api-demo/deps/qiskit-cpp/samples/build
+Hello from processor, rank 2 of 4 processes
+Hello from processor, rank 3 of 4 processes
+Hello from processor, rank 0 of 4 processes
+Hello from processor, rank 1 of 4 processes
+ibm_torino  ,
+ QRMI Job submitted to ibm_torino, JOB ID = d5oa7shh2mqc739ct5lg
+Completed, rank 3 of 4 processes
+Completed, rank 0 of 4 processes
+Completed, rank 1 of 4 processes
+Completed, rank 2 of 4 processes
