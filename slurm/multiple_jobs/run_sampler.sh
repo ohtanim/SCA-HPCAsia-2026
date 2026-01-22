@@ -14,4 +14,4 @@ echo "Current working directory is `pwd`"
 
 # Your script goes here
 source /shared/pyenv/bin/activate
-srun python /shared/job_scripts/job_array/sampler.py
+srun python ./sampler.py
