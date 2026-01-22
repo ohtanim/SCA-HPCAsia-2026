@@ -45,7 +45,6 @@ const uint32_t BITLEN = 10;
 const uint32_t MAXVAL = 1 << BITLEN;
 
 static std::vector<std::string> _split(const std::string &s, char delim) {
-    std::cerr <<  s << "  " << delim << std::endl;
     std::vector<std::string> elems;
     std::string item;
     for (char ch: s) {
