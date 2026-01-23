@@ -18,6 +18,9 @@ complex quantum workloads and prepare for future challenges in scalability and r
 
 
 ## Tutorial Agenda
+- Date: Mon, January 26, 2026
+- Time: 13:30 - 16:30
+- Room: 1007
 
 | Time | | Theme | Presenter |
 |----|----|----|----|
