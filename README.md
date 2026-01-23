@@ -32,6 +32,8 @@ complex quantum workloads and prepare for future challenges in scalability and r
 
 ## Presenters
 
+- Yoonho Park (yoonho@us.ibm.com) is a Principal Research Scientist at IBM Research-Yorktown with experience in operating systems, distributed systems, HPC, and cloud infrastructure. He led the IBM Research software teams during the delivery of the CORAL supercomputers, Summit and Sierra. He then led the delivery of on-premise AI cloud to IBM Research partners. His current focus is HPC-Quantum integration.
+
 - Munetaka Ohtani(ohtanim@jp.ibm.com) is a Senior Software Engineer at IBM Quantum, IBM Research-Tokyo, with extensive experience in distributed computing, cloud infrastructure, and analytics, the
 author has contributed to the development of global-scale software products for over a decade. Since 2020, he has been working at IBM Quantum, focusing on monitoring and observability tools for quantum systems. In 2023, his work shifted toward developing software for HPC-Quantum integration, enabling seamless access to quantum computers in on-premises environments. His recent efforts include building tools that allow quantum workloads to run on Slurm-based HPC eco systems, bridging classical and quantum computing. The presenter is passionate about advancing hybrid computing architectures and making quantum technologies more accessible to researchers and engineers.
 
