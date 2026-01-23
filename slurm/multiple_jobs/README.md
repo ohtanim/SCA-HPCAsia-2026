@@ -1,6 +1,6 @@
 # Get counts MPI program
 
-In the Getting Started section, all processing was performed within a single Slurm job that executed the Python code.
+In the [Getting Started](../getting_started/README.md) section, all processing was performed within a single Slurm job that executed the Python code.
 The bitstring of a Qiskit Sampler result represents the classical measurement outcome (0s and 1s) of the qubits after a quantum circuit is executed. It is a string representation of the binary state, where each character corresponds to a bit value, often ordered with the most significant bit on the left (n−1n-1n−1) and the least significant on the right (0).
 In this section, we split the workflow into two separate jobs by implementing the post‑processing step as an independent MPI program. The post‑processing stage derives the occurrence frequencies of the bitstrings contained in the Qiskit Sampler results.
 
