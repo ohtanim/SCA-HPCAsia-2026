@@ -135,7 +135,6 @@ The environment variables necessary for execution must be defined in ```/etc/slu
 {
   "resources": [
     {
-      "__comment__": "QCSC_software_prem_us",
       "name": "ibm_kingston",
       "type": "qiskit-runtime-service",
       "environment": {
