@@ -6,7 +6,11 @@ After creating (Map) and transpiling (Optimize) the quantum circuit, the seriali
 
 Two execution methods are provided: using Slurm’s heterogeneous job feature, and running three separate sbatch jobs sequentially as independent tasks.
 
-Below is the Slurm script for the heterogeneous job. It defines two components: a CPU node (node=c1, partition=normal) and a quantum computation node (node=c5, partition=quantum). The Map/Optimize and Result tasks run on the CPU node, while the Execute task runs on the quantum computation node.
+Below is the Slurm script for the heterogeneous job. It defines two components: 
+- a CPU node (node=c1, partition=normal) and
+- a quantum computation node (node=c5, partition=quantum).
+
+The Map/Optimize and Result tasks run on the CPU node, while the Execute task runs on the quantum computation node.
 
 ```bash
 #!/bin/bash
@@ -36,7 +40,7 @@ srun --het-group=1 task_runner ibm_fez sampler_input_ibm_fez.json sampler_output
 srun --het-group=0 python result.py sampler_output_ibm_fez.json
 ```
 
-When running with QRMI for the IBM Qiskit Runtime Service, the quantum job is executed on the IBM Quantum Platform using Qiskit Runtime’s Session execution mode by default. That is, once the resource is allocated and the job starts, a Qiskit session is created(acquire()); after the first Sampler.run() call, the QPU is exclusively occupied. The session is closed when the Slurm job finishes(release()). In other words, the QPU remains locked until the Slurm job completes.
+When running with QRMI for the IBM Qiskit Runtime Service, the quantum job is executed on the IBM Quantum Platform using Qiskit Runtime’s [Session](https://quantum.cloud.ibm.com/docs/en/guides/execution-modes#session-mode) execution mode by default. That is, once the resource is allocated and the job starts, a Qiskit session is created(```acquire()```); after the first Sampler.run() call, the QPU is exclusively occupied. The session is closed when the Slurm job finishes(```release()```). In other words, the QPU remains locked until the Slurm job completes. Sessions run in dedicated mode, which means that the user has total access to the backend. Sessions are never interrupted by calibrations or software upgrades.
 
 ![image](./images/hetjob.png)
 
