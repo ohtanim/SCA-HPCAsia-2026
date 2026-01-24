@@ -5,6 +5,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --gres=qpu:1
 #SBATCH --qpu=ibm_torino
+#SBATCH -p quantum
 
 echo "Starting at `date`"
 echo "Running on hosts: $SLURM_NODELIST"
