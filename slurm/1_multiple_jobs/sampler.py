@@ -66,10 +66,9 @@ pub_result = results[0]
 print(f"Counts for the 'meas' output register: {pub_result.data.meas.get_counts()}")
 
 bitstrings = results[0].data.meas.get_bitstrings()
-print("bitstrings >>>> ", len(bitstrings))
 u32int_array = np.array(
     [int(b, base=2) for b in bitstrings],
         dtype=np.uint32,
     )
-print(u32int_array)
+
 u32int_array.tofile("input.bin")
