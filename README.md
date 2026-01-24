@@ -45,4 +45,5 @@ author has contributed to the development of global-scale software products for 
 - [SPANK Plugin](https://github.com/qiskit-community/spank-plugins/tree/main)
 - [Demonstration of SQD using the Qiskit C API](https://github.com/qiskit-community/qiskit-c-api-demo)
 - [QRMI Examples](https://github.com/qiskit-community/qrmi/tree/main/examples)
+- [Slurm Docker Cluster](https://github.com/qiskit-community/spank-plugins/tree/main/demo/qrmi/slurm-docker-cluster)
 
