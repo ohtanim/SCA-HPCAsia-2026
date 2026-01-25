@@ -50,8 +50,6 @@ async def say_hello():
         executable="echo",
         executor="sbatch",
         launcher="single",
-        queue_name="debug-c",
-        project="group1",
         num_nodes=1,
     )
 
