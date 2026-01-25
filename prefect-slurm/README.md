@@ -28,7 +28,7 @@ prefect block register -m prefect_slurm
 
 Once the block is registered, you can find the `SlurmJobBlock` in the Prefect console.
 This block can submit a job to the SLURM scheduler deployed on a cluster, as well as execute jobs in the local shell for code validation.
-A target executable can also be launched inside the MPI environment using `mpirun`.
+A target executable can also be launched inside the MPI environment using `mpirun` or `srun`.
 
 ## Example
 
