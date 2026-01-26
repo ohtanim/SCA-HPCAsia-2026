@@ -7,6 +7,12 @@ In this section, we take Qiskit’s [Getting started with Sampler](https://quant
 
 Refer [How to build and install QRMI Python package](https://github.com/qiskit-community/qrmi/blob/main/INSTALL.md#how-to-build--install-qrmi-python-package) to build wheel and install to your python venv.
 
+Once you complete to setup your python environment, you will find ```qrmi``` in the result of ```pip list```.
+
+```bash
+pip list | grep qrmi
+qrmi                      0.10.1
+```
 
 ## Original Sampler code
 
